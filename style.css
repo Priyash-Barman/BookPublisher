@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    outline: none;
+    user-select: none;
+    list-style: none;
+}
+
+
+
+
+/* header css */
+.header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h2 {
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.561);
+}
+
+/* navigation css */
+.navigation {
+    background-color: rgba(124, 124, 124, 0.221);
+    font-size: 14px;
+    color: rgb(30, 30, 30);
+    padding: 0px 20px;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.navigation ul li {
+    padding: 12px 15px;
+    margin: 0px .3px;
+    cursor: pointer;
+}
+
+.navigation ul .nav-links:hover {
+    background-color: rgba(67, 67, 67, 0.373);
+}
+
+/* information css */
+.information {
+    min-height: 469px;
+}
+
+/* home page css */
+.home-info p {
+    padding: 30px 10px;
+    height: 305px;
+}
+
+.home-info .contact {
+    background-color: rgba(0, 0, 0, 0.524);
+    font-size: small;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.contact strong {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1.5px solid rgba(159, 159, 159, 0.638);
+}
+
+.contact-data {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 600px;
+    margin: auto;
+    padding: 15px 5px 20px 5px;
+}
+
+/* book list page css */
+.bookListPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bookTable {
+    box-shadow: 4px 4px 9px gray;
+}
+
+.bookTable tr {
+    font-size: 12px;
+}
+
+thead {
+    background-color: grey;
+    color: white;
+}
+
+.bookTable tr td,
+th {
+    padding: 3px 10px;
+}
+
+.row-0 {
+    background-color: rgba(128, 128, 128, 0.408);
+}
+
+.row-1 {
+    background-color: white;
+}
+
+/* feedback form */
+.feedbackForm {
+    padding: 20px;
+}
+
+.feedbackForm h4 {
+    color: rgb(82, 82, 82);
+}
+
+.feedbackForm form,
+h4 {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+input,
+textarea {
+    margin: 10px;
+    border: none;
+    border: 1.5px solid tomato;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(196, 196, 196, 0.305);
+}
+
+input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.submitBtn:hover {
+    transition-duration: 800ms;
+    cursor: pointer;
+    background-color: tomato;
+    color: white;
+}
+
+/* footer */
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    padding: 4px;
+}
+
+/* message */
+.message {
+    background-color: rgba(255, 99, 71, 0.746);
+    color: white;
+    padding: 10px 30px;
+    margin: 30px;
+}
+
+/* active page css */
+.active {
+    background-color: rgb(220, 84, 12);
+    color: white;
+}
+
+.active:hover {
+    background-color: tomato;
+}
+
+/* suthor form */
+.authorForm{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 400px;
+}
+.expectedDate{
+    padding: 10px;
+}
+.authorRegContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
