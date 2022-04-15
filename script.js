@@ -102,10 +102,11 @@ const authorContent = `
             <div class="authorRegContent">
                 <h4>Author Registration form</h4>
                 <form onsubmit="authorSubmit()" class="authorForm">
-                    <input type="text" placeholder="author name" required>
-                    <input type="email" placeholder="author email" required>
-                    <input type="number" placeholder="phone no" required>
-                    <input type="text" placeholder="enter proposed book title" required>
+                    <input type="text" placeholder="Enter proposed book title" required>
+                    <input type="text" placeholder="Subject" required>
+                    <input type="text" placeholder="Author name" required>
+                    <input type="email" placeholder="Author email" required>
+                    <input type="number" placeholder="Phone no" required>
                     <label for="expectedDate" class="expectedDate">Expected date to complete the book :</label>
                     <input type="date" id="expectedDate" required>
                     <input type="submit" value="submit" class="submitBtn">
@@ -147,9 +148,7 @@ bookList.addEventListener('click', () => {
     authorReg.classList.remove('active');
     feedback.classList.remove('active');
     content.innerHTML = bookContent;
-}
-
-);
+});
 
 // author 
 authorReg.addEventListener('click', () => {
@@ -158,9 +157,7 @@ authorReg.addEventListener('click', () => {
     home.classList.remove('active');
     feedback.classList.remove('active');
     content.innerHTML = authorContent;
-}
-
-);
+});
 
 // feedback 
 feedback.addEventListener('click', () => {
@@ -169,9 +166,7 @@ feedback.addEventListener('click', () => {
     authorReg.classList.remove('active');
     home.classList.remove('active');
     content.innerHTML = feedbackContent;
-}
-
-);
+});
 
 const submitFeedback = function () {
     content.innerHTML = `<h4 class="message">Feedback submitted successfully...<h4>`;
