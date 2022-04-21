@@ -140,6 +140,7 @@ const myHomepage = function () {
     bookList.classList.remove('active');
     authorReg.classList.remove('active');
     feedback.classList.remove('active');
+    document.querySelector('title').innerText = 'Welcome to Agun Publisher';
     content.innerHTML = homeContent;
 }
 
@@ -151,6 +152,7 @@ bookList.addEventListener('click', () => {
     home.classList.remove('active');
     authorReg.classList.remove('active');
     feedback.classList.remove('active');
+    document.querySelector('title').innerText = 'Book List';
     content.innerHTML = bookContent;
 });
 
@@ -160,6 +162,7 @@ authorReg.addEventListener('click', () => {
     bookList.classList.remove('active');
     home.classList.remove('active');
     feedback.classList.remove('active');
+    document.querySelector('title').innerText = 'Author Registration Form';
     content.innerHTML = authorContent;
 });
 
@@ -169,6 +172,7 @@ feedback.addEventListener('click', () => {
     bookList.classList.remove('active');
     authorReg.classList.remove('active');
     home.classList.remove('active');
+    document.querySelector('title').innerText = 'Feedback';
     content.innerHTML = feedbackContent;
 });
 
