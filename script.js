@@ -3,6 +3,7 @@
 // books data--------------------------------------
 const book1 = {
     title: 'Programming in c++',
+    subject: 'C++',
     author: "Alex",
     dateOfPublishing: "01-02-2021",
     price: 599,
@@ -10,6 +11,7 @@ const book1 = {
 
 const book2 = {
     title: 'Programming in Java',
+    subject: 'Java',
     author: "Sujit",
     dateOfPublishing: "01-02-2021",
     price: 699,
@@ -17,6 +19,7 @@ const book2 = {
 
 const book3 = {
     title: 'Programming in Python',
+    subject: 'Python',
     author: "Sagar",
     dateOfPublishing: "01-02-2021",
     price: 399,
@@ -24,6 +27,7 @@ const book3 = {
 
 const book4 = {
     title: 'Programming in Kotlin',
+    subject: 'Kotlin',
     author: "Sujoy",
     dateOfPublishing: "01-02-2021",
     price: 499,
@@ -31,32 +35,31 @@ const book4 = {
 
 const book5 = {
     title: 'Programming in Javascript',
+    subject: 'JavaScript',
     author: "Raju",
     dateOfPublishing: "01-02-2021",
     price: 499,
 }
 
 // -----------------------------------------------------
-const books = [book1,
-    book2,
-    book3,
-    book4,
-    book5];
+const books = [book1, book2, book3, book4, book5];
 
 const home = document.getElementById('homepage');
 const bookList = document.getElementById('bookList');
 const authorReg = document.getElementById('authorReg');
 const feedback = document.getElementById('feedback');
 const content = document.getElementById('content');
+const FeedbackUser = document.getElementById('FeedbackUser');
+const FeedbackMsg = document.getElementById('FeedbackMsg');
 
 // templates--------------------------------------------
 // home content 
 const homeContent = ` 
         <div class="home-info"id="home-info">
             <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla qui necessitatibus quae distinctio hic maxime,
-            asperiores iste? Ab dicta sed deserunt eligendi quos fugiat animi consequuntur explicabo magni vitae ! 
+                <i style="color: blue":>Agun Publisher</i> has been publishing school, college and universitiy books for more than 25 years. Our books span K-12 to University level in nearly all subjects offered in schools/colleges/universities in all over world. Our books adhere to the current syllabus and offer to learn support to students in the best possible manner. The language is simple and clear, illustrations and diagrams help the student to grasp the matter easily; design and graphics make our books more student-friendly and appealing.
+                <br><br>All our books go through checks by our team of editors before being printed. Our goal is to provide error-free books to students at affordable prices. To accompany our books, <i style="color: blue">Agun Publisher App</i> provides supporting material that is not given in the printed books. It is completely free, available on The Google Play store, and contains additional theory, problems, exercises, solutions and test papers.
+                <br><br>We love feedback from our community of students, teachers and authors Our Facebook page is where we post news about ourselves. We welcome all of you to browse through our website, visit and like our social media pages and to participate in our endeavors to support learning and make better books
             </p>
             <div class="contact">
                 <strong>Contact Us</strong>
@@ -81,16 +84,17 @@ let bookContent = `
         <table class="bookTable"id="bookTable">
             <thead>
                 <th>TITLE</th>
+                <th>SUBJECT</th>
                 <th>AUTHOR(S)</th>
                 <th>DATE OF PUBLISH</th>
                 <th>PRICE</th>
             </thead>`;
 let x = 1;
-
 books.forEach(book => {
     bookContent += ` 
     <tr class="row-${x % 2}">
     <td>${book.title}</td>
+    <td>${book.subject}</td>
     <td>${book.author}</td> 
     <td>${book.dateOfPublishing}</td>
     <td>${book.price}</td> </tr>`;
@@ -120,7 +124,7 @@ const feedbackContent = `
         <h4>&nbsp;&nbsp;Enter your Feedback</h4>
         <form onsubmit="submitFeedback()">
             <input type="text"id="FeedbackUser"placeholder="Enter your name"required>
-            <textarea name=""id=""cols="30"rows="10"placeholder="Enter feedback here..." required></textarea>
+            <textarea name=""id="FeedbackMsg"cols="30"rows="10"placeholder="Enter feedback here..." required></textarea>
             <input type="submit"value="submit"class="submitBtn">
         </form>
     </div>`;
@@ -172,7 +176,9 @@ const submitFeedback = function () {
     content.innerHTML = `<h4 class="message">Feedback submitted successfully...<h4>`;
     setTimeout(myHomepage, 4000);
 }
+let authorRegInfo = [];
 const authorSubmit = function () {
+    authorRegInfo.push()
     content.innerHTML = `<h4 class="message">Author submitted successfully...<h4>`;
     setTimeout(myHomepage, 4000);
 }

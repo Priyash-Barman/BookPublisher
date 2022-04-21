@@ -52,7 +52,7 @@
 /* home page css */
 .home-info p {
     padding: 30px 10px;
-    height: 305px;
+    min-height: 305px;
 }
 
 .home-info .contact {
@@ -180,16 +180,18 @@ input:focus {
 }
 
 /* suthor form */
-.authorForm{
+.authorForm {
     display: flex;
     flex-direction: column;
     margin: auto;
     max-width: 400px;
 }
-.expectedDate{
+
+.expectedDate {
     padding: 10px;
 }
-.authorRegContent{
+
+.authorRegContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
