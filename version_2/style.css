@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ms+Madi&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    user-select: none;
+    list-style: none;
+}
+
+.active {
+    background-color: #0A1535;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h3,
+.logo {
+    font-family: 'Ms Madi', cursive;
+    padding: 4px;
+}
+
+/* navbar */
+
+.navbar {
+    background-color: rgb(0, 130, 223);
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar li {
+    font-size: 15px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 1px;
+    padding: 0px 20px;
+    display: flex;
+    font-weight: 500;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* home page css */
+.home-info p {
+    padding: 30px 10px;
+    min-height: 305px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to top left, #733ccb23, #0f5ae413, #36a3f613);
+}
+
+.home-info .contact {
+    background-color: #0A1535;
+    font-size: small;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.contact strong {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to left, #36A3F6, #0F5AE4, #723CCB);
+    height: 30px;
+    align-items: center;
+    border-radius: 3px;
+    position: relative;
+    top: -30px;
+    height: 50px;
+}
+
+.contact-data {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 600px;
+    margin: auto;
+    padding: 15px 5px 20px 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* book list page css */
+.bookListPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bookTable {
+    box-shadow: 4px 4px 9px gray;
+}
+
+.bookTable tr {
+    font-size: 12px;
+}
+
+thead {
+    background-color: rgb(0, 150, 226);
+    color: white;
+}
+
+.bookTable tr td,
+th {
+    padding: 3px 10px;
+}
+
+.row-0 {
+    background-color: rgba(0, 130, 223, 0.293);
+}
+
+.row-1 {
+    background-color: white;
+}
+
+/* author registration form */
+.authorForm {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 400px;
+}
+
+.expectedDate {
+    padding: 10px;
+}
+
+.authorRegContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* feedback form */
+.feedbackForm {
+    padding: 20px;
+}
+
+.feedbackForm h4 {
+    color: rgb(82, 82, 82);
+}
+
+.feedbackForm form,
+h4 {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+input,
+textarea {
+    margin: 10px;
+    border: none;
+    border: 1.5px solid rgb(0, 150, 226);
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(0, 151, 226, 0.02);
+}
+
+input:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.submitBtn:hover {
+    transition-duration: 800ms;
+    cursor: pointer;
+    background-color: #0A1535;
+    color: white;
+}
+
+/* message */
+.message {
+    background-color: rgba(0, 151, 226, 0.646);
+    color: white;
+    padding: 10px 30px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+
+/* footer */
+.footer {
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: smaller;
+    padding: 4px;
+}

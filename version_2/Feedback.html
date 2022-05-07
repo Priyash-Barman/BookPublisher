@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header" id="Header">
+        <img src="logo.png" alt="logo" height="30px" class="logo">
+        <h3>Agun Publisher</h3>
+    </div>
+    <!-- Navigation -->
+    <div>
+        <ul class="navbar" id="Navigation">
+            <li class="nav-link "><a href="Home.html">Home</a></li>
+            <li class="nav-link "><a href="Book_List.html">Book List</a></li>
+            <li class="nav-link "><a href="Author_RegistrationForm.html">Author Registration Form</a></li>
+            <li class="nav-link active"><a href="Feedback.html">Feedback</a></li>
+            <li id="versionOne" class="nav-link"><a href="../index.html">version 1</a></li>
+        </ul>
+    </div>
+    <!-- Information -->
+    <div class="feedbackForm " id="feedbackForm">
+        <h4>&nbsp;&nbsp;Enter your Feedback</h4>
+        <form onsubmit="submitFeedback()">
+            <input type="text" id="FeedbackUser" placeholder="Enter your name">
+            <textarea name="" id="FeedbackMsg" cols="30" rows="10" placeholder="Enter feedback here..."></textarea>
+            <input type="submit" value="submit" class="submitBtn">
+        </form>
+    </div>
+    <!-- Footer -->
+    <div>
+        <center class="footer">Copyright © 1992-2022 Agun Publisher All Rights Reserved</center>
+    </div>
+
+    <script>
+        const uName = document.getElementById('FeedbackUser');
+        const uMsg = document.getElementById('FeedbackMsg');
+        const infoDiv = document.getElementById('feedbackForm');
+        const submitFeedback = function () {
+            if (uName.value === '' || uMsg.value === '') {
+                alert('All the fields must be filled with some data..!');
+                return;
+            }
+            infoDiv.innerHTML = `
+            <div class="message">
+                <div style="color:black">
+                    Name<br>
+                    Feedback<br>
+                </div>
+                <div>
+                    : ${uName.value}<br>
+                    : ${uMsg.value}<br>
+                </div>
+            </div>        
+            `;
+            setTimeout("location.href='Home.html'", 10000);
+        }
+    </script>
+</body>
+
+</html>
